@@ -17,7 +17,7 @@
   <div id="map"></div>
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
   <script>
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var map = L.map('map').setView([32.505, 26.09], 3);
 
     L.tileLayer('https://tiles.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -87,6 +87,25 @@ var marker10 = L.circleMarker([20.5937, 78.9629], {
   radius: 15,  // 15-pixel radius
   fillOpacity: 0.5  // 50% transparency
 }).addTo(map);
+
+var marker10 = L.circleMarker([40.7128, -74.0060], {  // New York
+  color: '#70D6CC',
+  radius: 15,
+  fillOpacity: 0.5
+}).addTo(map);
+
+var marker11 = L.circleMarker([23.1136, -82.3666], {  // Cuba
+  color: '#70D6CC',
+  radius: 15,
+  fillOpacity: 0.5
+}).addTo(map);
+
+var marker12 = L.circleMarker([-15.7801, -47.9292], {  // Brazil
+  color: '#70D6CC',
+  radius: 15,
+  fillOpacity: 0.5
+}).addTo(map);
+
 
 
 
